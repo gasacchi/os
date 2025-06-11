@@ -1,0 +1,42 @@
+[[language]]
+name = "rust"
+file-types = ["rs", "glimpse"]
+indent = { tab-width = 4, unit = "    "}
+
+[[language]]
+name = "scheme"
+scope = "source.scheme"
+injection-regex = "scheme"
+file-types = ["ss", "scm", "kbd"]
+shebangs = ["scheme", "guile", "chicken"]
+comment-token = ";;"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "rescript"
+auto-format = true
+file-types = ["res", "resi"]
+indent = { tab-width = 4, unit = "    "}
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+
+[language-server.deno-lsp.config.deno]
+enable = true
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
+indent = { tab-width = 4, unit = "    " }

@@ -1,0 +1,44 @@
+theme = "mellow"
+
+[editor]
+scrolloff = 50
+line-number = "relative"
+# shell = []
+cursorline = true
+cursorcolumn = true
+auto-format = false
+completion-timeout = 5
+undercurl = true
+rulers = [ 80 ]
+bufferline = "always"
+color-modes = true
+popup-border = "none"
+jump-label-alphabet = "strnieahcdluoy"
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.statusline]
+mode.normal = " normal"
+mode.insert = " insert"
+mode.select = "󰫙 select"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[keys.normal.space]
+"." = "file_picker_in_current_directory"
+
+[keys.normal.space.e]
+r = ":config-reload"
+o = ":config-open"
+l = ":open ~/.config/helix/languages.toml"
+t = ":pipe-to wezterm cli split-pane --percent 40 -- fish"
+g = ":pipe-to wezterm cli split-pane --percent 80 -- lazygit"
+b = ":pipe-to wezterm cli spawn --cwd . -- fish"
