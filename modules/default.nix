@@ -3,7 +3,7 @@
     [
         ./boot.nix
         ./gnome.nix
-        # ./kanata.nix
+        ./kanata.nix
         ./locale.nix
         ./networking.nix
         ./packages.nix
