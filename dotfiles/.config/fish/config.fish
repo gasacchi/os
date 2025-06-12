@@ -12,7 +12,7 @@ alias package="e ~/Dotfiles/packages.md"
 alias e="hx"
 
 set -U fish_greeting
-set -Ux LS_COLORS $(vivid generate nord)
+set -Ux LS_COLORS $(vivid generate gruvbox-dark-hard)
 set -Ux BAT_THEME CatppuccinGscMod
 set -Ux EDITOR hx
 # set -Ux HELIX_RUNTIME ~/.config/helix/runtime
@@ -31,3 +31,5 @@ set -U fish_user_paths ~/.local/bin $fish_user_paths
 
 # install theme
 # fish_config theme save "CatppuccinGscMod"
+
+theme_gruvbox dark

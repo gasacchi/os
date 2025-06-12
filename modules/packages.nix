@@ -1,11 +1,19 @@
 { pkgs, ... }:
 
 {
+    nixpkgs.config.allowUnfree = true;
     # System Packages
     environment.systemPackages = with pkgs;
     [
         git  
         helix
+    ];
+
+    # Fonts
+    fonts.packages = with pkgs;
+    [
+        noto-fonts-cjk-sans
+        noto-fonts-cjk-serif
     ];
 
     # User Packages
@@ -27,11 +35,12 @@
         # xh
         # gitui
         # dust
-        # hyperfine
-        # tokei
-        # unzip
-        # unrar
-        # wget
+        hyperfine
+        tokei
+        unzip
+        unrar
+        wget
+        wl-clipboard
 
         # apps
         brave
