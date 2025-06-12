@@ -21,7 +21,6 @@
     [
         # terminal
         delta
-        clang
         ghostty
         just
         stow
@@ -42,6 +41,10 @@
         unrar
         wget
         wl-clipboard
+
+        # develompment
+        clang
+        nixd
 
         # apps
         brave
