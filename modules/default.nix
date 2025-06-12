@@ -2,8 +2,8 @@
     imports =
     [
         ./boot.nix
-        ./gnome.nix
         ./kanata.nix
+        ./kde.nix
         ./locale.nix
         ./networking.nix
         ./packages.nix
