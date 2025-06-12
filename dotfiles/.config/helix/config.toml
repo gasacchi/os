@@ -1,4 +1,4 @@
-theme = "mellow"
+theme = "gruvbox_dark_hard"
 
 [editor]
 scrolloff = 50

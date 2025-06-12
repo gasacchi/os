@@ -5,7 +5,7 @@ alias lla="ls -la"
 alias cp="cp -v"
 alias mv="mv -v"
 alias rm="rm -v"
-alias cat="bat"
+alias cat="bat --theme-dark gruvbox-dark"
 alias dotfiles="cd ~/Dotfiles"
 alias dev="cd ~/Dev"
 alias package="e ~/Dotfiles/packages.md"
@@ -13,7 +13,6 @@ alias e="hx"
 
 set -U fish_greeting
 set -Ux LS_COLORS $(vivid generate gruvbox-dark-hard)
-set -Ux BAT_THEME CatppuccinGscMod
 set -Ux EDITOR hx
 # set -Ux HELIX_RUNTIME ~/.config/helix/runtime
 

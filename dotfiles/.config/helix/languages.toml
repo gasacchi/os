@@ -1,9 +1,4 @@
 [[language]]
-name = "rust"
-file-types = ["rs", "glimpse"]
-indent = { tab-width = 4, unit = "    "}
-
-[[language]]
 name = "scheme"
 scope = "source.scheme"
 injection-regex = "scheme"
@@ -12,18 +7,6 @@ shebangs = ["scheme", "guile", "chicken"]
 comment-token = ";;"
 indent = { tab-width = 4, unit = "    " }
 
-[[language]]
-name = "rescript"
-auto-format = true
-file-types = ["res", "resi"]
-indent = { tab-width = 4, unit = "    "}
-
-[language-server.deno-lsp]
-command = "deno"
-args = ["lsp"]
-
-[language-server.deno-lsp.config.deno]
-enable = true
 
 [[language]]
 name = "html"
@@ -39,4 +22,15 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "svelte"
 language-servers = [ "svelteserver", "tailwindcss-ls" ]
+indent = { tab-width = 4, unit = "    " }
+
+
+[[language]]
+name = "nix"
+scope = "source.nix"
+injection-regex = "nix"
+file-types = ["nix"]
+shebangs = []
+comment-token = "#"
+language-servers = [ "nixd" ]
 indent = { tab-width = 4, unit = "    " }

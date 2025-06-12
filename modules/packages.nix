@@ -21,6 +21,7 @@
     [
         # terminal
         delta
+        clang
         ghostty
         just
         stow
