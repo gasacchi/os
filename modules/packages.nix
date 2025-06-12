@@ -26,9 +26,9 @@
         stow
         vivid
         # uutils-coreutils-noprefix
-        # ripgrep
-        # ripgrep-all
-        # fd
+        ripgrep
+        ripgrep-all
+        fd
         bat
         eza
         # zoxide
@@ -48,8 +48,8 @@
 
         # apps
         brave
-        # qbittorrent
-        # vlc
-        # vlc
+        qbittorrent
+        vlc
+        freecad
     ];
 }
