@@ -6,6 +6,11 @@
 rebuild-switch:
     doas nixos-rebuild switch --flake .
 
+clean:
+    doas nix-collect-garbage -d
+    nix-collect-garbage -d
+    doas nixos-rebuild switch --flake .
+
 dotfiles:
     cd ./dotfiles; just stow
 
