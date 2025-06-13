@@ -18,7 +18,7 @@ set -Ux EDITOR hx
 
 # fcitx5
 # set -Ux GTK_IM_MODULE fcitx
-set -Ux QT_IM_MODULE fcitx
+# set -Ux QT_IM_MODULE fcitx
 set -Ux SDL_IM_MODULE fcitx
 set -Ux GLFW_IM_MODULE ibus
 set -Ux XMODIFIERS @im=fcitx
