@@ -27,8 +27,7 @@ set -Ux XMODIFIERS @im=fcitx
 # path
 set -U fish_user_paths ~/.local/bin $fish_user_paths
 # set -U fish_user_paths ~/.odin/bin $fish_user_paths
-
 # install theme
 # fish_config theme save "CatppuccinGscMod"
 
-theme_gruvbox dark
+# theme_gruvbox dark
