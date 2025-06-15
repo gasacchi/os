@@ -1,17 +1,21 @@
 [include]
-	path = ~/.config/delta/themes/catppuccin.gitconfig
+	patch = ~/.config/delta/themes/themes.gitconfig
 
 [core]
 	pager = delta
 
+[delta]
+	# features = gruvmax-fang
+	syntax-theme = gruvbox-dark
+	side-by-side = true
+	line-numbers = true
+
+
 [interactive]
 	diffFilter = delta --color-only
 
-[delta]
-	features = catppuccin-gsc-mod
-
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 
 [diff]
 	colorMoved = default

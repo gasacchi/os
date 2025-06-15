@@ -3,6 +3,8 @@ theme = GruvboxDarkHard
 font-family = M+1Code Nerd Font
 font-size = 12
 
+shell-integration = fish
+
 # background-opacity = 0.5
 # background-blur = true
 # unfocused-split-opacity = 0.15
