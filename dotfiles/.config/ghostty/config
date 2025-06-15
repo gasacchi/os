@@ -5,9 +5,9 @@ font-size = 12
 
 shell-integration = fish
 
-# background-opacity = 0.5
-# background-blur = true
-# unfocused-split-opacity = 0.15
+background-opacity = 0.5
+background-blur = true
+unfocused-split-opacity = 0.7
 
 # reload
 keybind = alt+t>r=reload_config
