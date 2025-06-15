@@ -21,36 +21,41 @@
     users.users.gasacchi.packages = with pkgs;
     [
         # terminal
-        delta
-        ghostty
-        just
-        stow
-        vivid
-        # uutils-coreutils-noprefix
-        ripgrep
-        ripgrep-all
-        fd
-        bat
-        eza
-        # zoxide
-        # xh
-        # gitui
-        # dust
-        hyperfine
-        tokei
-        unzip
-        unrar
-        wget
-        wl-clipboard
+        bat                       # cat alternative
+        bottom                    # better top
+        delta                     # git page syntax highlighting
+        dust                      # du alternative
+        eza                       # ls alternative
+        fd                        # find alternative
+        ghostty                   # termanal
+        gitui                     # terminal git-ui
+        hyperfine                 # benchmark tools
+        just                      # command runner
+        procs                     # better ps
+        ripgrep                   # faster grep
+        ripgrep-all               # ripgrep, but also for pdf etc
+        starship                  # pretty prompt
+        stow                      # managing dotfiles
+        tokei                     # Line of code  counter
+        # uutils-coreutils-noprefix # rewrite gnu
+        unzip                     # unpack zip file
+        unrar                     # unpack rar file
+        vivid                     # generator for LS_COLORS
+        # xh                        # tools for sending https requests
+        wget                      # retrieving file using https / ftp
+        wl-clipboard              # wayland clipboard
+        zoxide                    # fast cd command
 
         # develompment
-        clang
-        nixd
+        clang                     # C compiler
+        # gdb                       # debugger
+        nixd                      # nix language server
+        # valgrind                  # memory leak and performance checker
 
         # apps
-        brave
-        qbittorrent
-        vlc
-        freecad
+        brave                     # browser
+        freecad                   # 3d cad
+        vlc                       # video player
+        qbittorrent               # torrent
     ];
 }
