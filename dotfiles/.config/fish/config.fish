@@ -1,7 +1,8 @@
 alias cat="bat --theme-dark gruvbox-dark"
 alias btm="btm --theme gruvbox"
 alias du="dust"
-alias gitui="gitui --theme gruvbox.ron"
+# alias g="gitui --theme gruvbox.ron"
+alias g="gitui"
 alias ps="procs"
 
 alias ls="eza"
@@ -12,9 +13,11 @@ alias lla="ls -la"
 alias cp="cp -v"
 alias mv="mv -v"
 alias rm="rm -v"
-alias dotfiles="cd ~/Dotfiles"
+
+alias dotfiles="cd ~/os/dotfiles"
 alias dev="cd ~/Dev"
-alias package="e ~/Dotfiles/packages.md"
+alias os="cd ~/os"
+
 alias e="hx"
 
 set -U fish_greeting
