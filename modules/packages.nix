@@ -26,6 +26,7 @@
         delta                     # git page syntax highlighting
         dust                      # du alternative
         eza                       # ls alternative
+        fastfetch                 # sys info
         fd                        # find alternative
         ghostty                   # termanal
         gitui                     # terminal git-ui
