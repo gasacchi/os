@@ -9,6 +9,9 @@ background-opacity = 0.5
 background-blur = true
 unfocused-split-opacity = 0.7
 
+window-height = 45
+window-width = 190
+
 # reload
 keybind = alt+t>r=reload_config
 
@@ -20,6 +23,7 @@ keybind = alt+t>t=new_tab
 keybind = alt+t>s=new_split:down
 keybind = alt+t>v=new_split:right
 keybind = alt+t>z=toggle_split_zoom
+keybind = alt+t>q=close_surface
 
 # split movement
 keybind = alt+left=goto_split:left

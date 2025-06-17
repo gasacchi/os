@@ -1,3 +1,13 @@
 inherits = "gruvbox_dark_hard"
   
 "ui.background" = {}
+"ui.cursorline.primary" = {}
+"ui.cursorline.secondary" = {}
+"ui.cursorcolumn.primary" = {}
+"ui.cursorcolumn.secondary" = {}
+"ui.window" = {}
+"ui.bufferline.background" = {}
+"ui.statusline" = {}
+"ui.statusline.inactive" = {}
+"ui.help" = {}
+

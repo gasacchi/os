@@ -35,6 +35,7 @@ set -Ux XMODIFIERS @im=fcitx
 
 # path
 set -U fish_user_paths ~/.local/bin $fish_user_paths
+set -U fish_user_paths ~/.bun/bin $fish_user_paths
 
 # starship
 starship init fish | source
