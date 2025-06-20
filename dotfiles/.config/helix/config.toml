@@ -1,4 +1,4 @@
-theme = "gruvbox_dark_hard"
+theme = "gruvbox_transparent"
 
 [editor]
 scrolloff = 50
@@ -35,10 +35,10 @@ select = "underline"
 [keys.normal.space]
 "." = "file_picker_in_current_directory"
 
+[keys.normal.space.g]
+o = ":run-shell-command gitui"
+
 [keys.normal.space.e]
 r = ":config-reload"
 o = ":config-open"
 l = ":open ~/.config/helix/languages.toml"
-t = ":pipe-to wezterm cli split-pane --percent 40 -- fish"
-g = ":pipe-to wezterm cli split-pane --percent 80 -- lazygit"
-b = ":pipe-to wezterm cli spawn --cwd . -- fish"
