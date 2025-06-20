@@ -12,7 +12,18 @@
     # t440p specific
     # hardware.cpu.intel.updateMicrocode = true;
     # services.libinput.enable = true;
-    
+    hardware.graphics =
+    {
+        enable = true;
+        enable32Bit = true;
+    };
+    boot =
+    {
+        extraModprobeConfig = ''
+            options bbswitch use_acpi_to_detect_card_state=1
+            options thinkpad_acpi force_load=1 fan_control=1
+        '';
+    };
 
     # additional packages
     environment.systemPackages = with pkgs;
