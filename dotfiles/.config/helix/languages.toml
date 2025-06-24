@@ -36,13 +36,12 @@ language-servers = [ "nixd" ]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
-name = "rescript"
-scope = "source.rescript"
-injection-regex = "rescript"
-file-types = ["res"]
-roots = ["rescript.json"]
-auto-format = true
-comment-token = "//"
-block-comment-tokens = { start = "/*", end = "*/" }
-language-servers = [ "rescript-language-server" ]
+name = "gleam"
+scope = "source.gleam"
+injection-regex = "gleam"
+file-types = ["gleam"]
+roots = ["gleam.toml"]
+comment-tokens = ["//", "///", "////"]
 indent = { tab-width = 4, unit = "    " }
+language-servers = [ "gleam" ]
+auto-format = false

@@ -3,10 +3,13 @@
 #     doas systemctl start kanata.service
 #     doas systemctl enable kanata.service
 
-rebuild-switch:
+nix-rebuild-switch:
     doas nixos-rebuild switch --flake .
 
-clean:
+nix-update-flake:
+    nix flake update
+
+nix-clean:
     doas nix-collect-garbage -d
     nix-collect-garbage -d
     doas nixos-rebuild switch --flake .
