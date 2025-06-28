@@ -58,6 +58,7 @@
         freecad                   # 3d cad
         vlc                       # video player
         qbittorrent               # torrent
+        spotify                   # music
 
         # games
         lutris
