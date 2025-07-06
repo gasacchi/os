@@ -52,6 +52,7 @@
         # gdb                       # debugger
         nixd                      # nix language server
         # valgrind                  # memory leak and performance checker
+        zed-editor
 
         # apps
         brave                     # browser
