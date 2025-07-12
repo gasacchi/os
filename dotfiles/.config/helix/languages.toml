@@ -7,7 +7,6 @@ shebangs = ["scheme", "guile", "chicken"]
 comment-token = ";;"
 indent = { tab-width = 4, unit = "    " }
 
-
 [[language]]
 name = "html"
 language-servers = [ "vscode-html-language-server", "tailwindcss-ls"]
@@ -24,7 +23,6 @@ name = "svelte"
 language-servers = [ "svelteserver", "tailwindcss-ls" ]
 indent = { tab-width = 4, unit = "    " }
 
-
 [[language]]
 name = "nix"
 scope = "source.nix"
@@ -36,11 +34,13 @@ language-servers = [ "nixd" ]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
-name = "gleam"
-scope = "source.gleam"
-injection-regex = "gleam"
-file-types = ["gleam"]
-roots = ["gleam.toml"]
-indent = { tab-width = 4, unit = "    " }
-language-servers = [ "gleam" ]
+name = "rescript"
+scope = "source.rescript"
+injection-regex = "rescript"
+file-types = ["res"]
+roots = ["rescript.json"]
 auto-format = false
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "rescript-language-server" ]
+indent = { tab-width = 4, unit = "    " }
