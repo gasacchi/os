@@ -39,7 +39,7 @@
   
   
   ;; bottom
-  lmod           (tap-hold 100 200 spc lmet)
+  ;; lmod           (tap-hold 100 200 spc lmet)
  
   rmod           (layer-switch secondary-alpha)
 )
@@ -48,7 +48,7 @@
 (deflayer main-alpha
         @u    @o    @y              @c    @d    @l
   @i    @e    @a    @h              @s    @t    @r    @n
-                    @lmod           @rmod
+                    spc             @rmod
 )
 
 
