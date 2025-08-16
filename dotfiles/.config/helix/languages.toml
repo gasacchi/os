@@ -19,6 +19,10 @@ auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
+name = "json"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "svelte"
 language-servers = [ "svelteserver", "tailwindcss-ls" ]
 indent = { tab-width = 4, unit = "    " }
@@ -34,13 +38,22 @@ language-servers = [ "nixd" ]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
-name = "rescript"
-scope = "source.rescript"
-injection-regex = "rescript"
-file-types = ["res"]
-roots = ["rescript.json"]
+name = "haskell"
+file-types = ["gsc"]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server]
+moonbit-lsp = { command = "moonbit-lsp" }
+
+[[language]]
+name = "moonbit"
+scope = "source.moonbit"
+injection-regex = "moonbit"
+file-types = ["mbt"]
+roots = ["moon.mod.json"]
 auto-format = false
 comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
-language-servers = [ "rescript-language-server" ]
+language-servers = [ "moonbit-lsp" ]
 indent = { tab-width = 4, unit = "    " }
+grammar = "rust"

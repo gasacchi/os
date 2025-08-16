@@ -23,7 +23,7 @@ alias e="hx"
 set -U fish_greeting
 set -Ux LS_COLORS $(vivid generate gruvbox-dark-hard)
 set -Ux EDITOR hx
-# set -Ux HELIX_RUNTIME ~/.config/helix/runtime
+set -Ux HELIX_RUNTIME ~/.config/helix/runtime
 
 # fcitx5
 # set -Ux GTK_IM_MODULE fcitx

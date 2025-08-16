@@ -3,11 +3,13 @@ theme = "gruvbox_transparent"
 [editor]
 scrolloff = 50
 line-number = "relative"
-# shell = []
+shell = ["fish", "-c"]
 cursorline = true
 cursorcolumn = true
+continue-comments = false
 auto-format = false
 completion-timeout = 5
+true-color = true
 undercurl = true
 rulers = [ 80 ]
 bufferline = "always"
@@ -20,6 +22,8 @@ end-of-line-diagnostics = "hint"
 cursor-line = "warning"
 
 [editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
 mode.normal = " normal"
 mode.insert = " insert"
 mode.select = "󰫙 select"
@@ -32,11 +36,29 @@ normal = "block"
 insert = "bar"
 select = "underline"
 
-[keys.normal.space]
-"." = "file_picker_in_current_directory"
+[keys.normal]
+"ret" = "goto_word"
+
+[keys.normal.space.t]
+u = [
+  ":write",
+  ":sh 'just update-snapshot'",
+  ":redraw",
+  ":reload"
+]
 
 [keys.normal.space.g]
-o = ":run-shell-command gitui"
+o = [
+  ":write-all",
+  ":new",
+  ":insert-output gitui >/dev/tty",
+  ":set mouse false",
+  ":set mouse true",
+  ":buffer-close!",
+  ":redraw",
+  ":reload-all"
+]
+p = ":sh git push"
 
 [keys.normal.space.e]
 r = ":config-reload"
