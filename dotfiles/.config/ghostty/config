@@ -1,13 +1,13 @@
-theme = GruvboxDarkHard
+theme = Gruvbox Dark Hard
 
 font-family = M+1Code Nerd Font
 font-size = 12
 
 shell-integration = fish
 
-background-opacity = 0.5
-background-blur = true
-unfocused-split-opacity = 0.7
+background-opacity = 1.0
+background-blur = false
+unfocused-split-opacity = 0.9
 
 window-height = 45
 window-width = 190

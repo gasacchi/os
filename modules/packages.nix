@@ -35,6 +35,7 @@
         procs                     # better ps
         ripgrep                   # faster grep
         ripgrep-all               # ripgrep, but also for pdf etc
+        scrcpy                    # mirror android
         starship                  # pretty prompt
         stow                      # managing dotfiles
         tokei                     # Line of code  counter
@@ -46,22 +47,19 @@
         wget                      # retrieving file using https / ftp
         wl-clipboard              # wayland clipboard
         zoxide                    # fast cd command
+        yt-dlp                    # youtube downloader cli
 
         # develompment
         clang                     # C compiler
         # gdb                       # debugger
         nixd                      # nix language server
         # valgrind                  # memory leak and performance checker
-        zed-editor
 
         # apps
         brave                     # browser
-        freecad                   # 3d cad
+        google-chrome
         vlc                       # video player
         qbittorrent               # torrent
         spotify                   # music
-
-        # games
-        lutris
     ];
 }

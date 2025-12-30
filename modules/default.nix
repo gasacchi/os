@@ -3,7 +3,7 @@
     [
         ./boot.nix
         ./kanata.nix
-        ./kde.nix
+        ./cosmic.nix
         ./locale.nix
         ./networking.nix
         ./packages.nix
