@@ -61,5 +61,6 @@
         vlc                       # video player
         qbittorrent               # torrent
         spotify                   # music
+        obs-studio                # streaming / video capture
     ];
 }
