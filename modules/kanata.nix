@@ -5,13 +5,12 @@
     #     "/home/gasacchi/.config/kanata/egoist.kbd";
 
     services.kanata.keyboards.egoist.config = ''
-;; Egoist 16-keys Layout
+;; Egoist 18-keys Layout
 
-;; Source
 (defsrc
-        '     ;     l               f     d     s
-  ]     [     p     o               r     e     w     q
-                    f10             f6
+          '     ;     l               f     d     s     
+    ]     [     p     o               r     e     w     q
+                f11   f10             f6    f5
 )
 
 
@@ -47,9 +46,9 @@
       
 
 (deflayer alpha-1
-        @u    @o    @y              @c    @d    @l
-  @i    @e    @a    @h              @s    @t    @r    @n
-                    spc             @rmod
+        @u    @o        @y              @c    @d    @l
+  @i    @e    @a        @h              @s    @t    @r    @n
+              rpt-any   spc             @rmod rpt-any
 )
 
 
@@ -59,9 +58,14 @@
   , (tap-hold 100 200
       (multi , (layer-switch alpha-1))
       lctrl)
+
   . (tap-hold 100 200
-      (multi . (layer-switch alpha-1))
+      (tap-dance 200
+        ((multi . (layer-switch alpha-1))
+         (multi (macro . .) (layer-switch alpha-1))
+         (multi (macro . . .) (layer-switch alpha-1))))
       lalt)
+
   f (tap-hold 100 200
       (multi f (layer-switch alpha-1))
       lmet)
@@ -91,14 +95,15 @@
 
   ;; bottom mod
   lmod0 (layer-switch alpha-1-upper)
-  rmod0 (layer-switch alpha-2-upper)
+  llmod0 (layer-switch alpha-2-upper)
+  rmod0 (layer-switch alpha-1)
 )
 
 
 (deflayer alpha-2
-        @,    @.    @f              @w    @k    @j
-  @q    @z    @x    @p              @g    @m    @v    @b
-                    @lmod0          @rmod0
+        @,    @.        @f              @w     @k    @j
+  @q    @z    @x        @p              @g     @m    @v    @b
+              @llmod0   @lmod0          @rmod0 @rmod0
 )
 
 ;; Alpha-1 Uppercase Layer
@@ -132,9 +137,9 @@
 
 
 (deflayer alpha-1-upper
-        @U    @O    @Y              @C    @D    @L
-  @I    @E    @A    @H              @S    @T    @R    @N
-                    @lmod1          @rmod1
+        @U    @O      @Y              @C     @D    @L
+  @I    @E    @A      @H              @S     @T    @R    @N
+              @lmod1  @lmod1          @rmod1 @rmod1
 )
 
 
@@ -158,7 +163,7 @@
   G (multi (macro S-g) (layer-switch alpha-1))
   M (multi (macro S-m) (layer-switch alpha-1))
   V (multi (macro S-v) (layer-switch alpha-1))
-  B (multi (macro S-b) (layer-switch alpha-1))                    
+  B (multi (macro S-b) (layer-switch alpha-1))
 
   ;; bottom mod
   lmod2 (layer-switch alpha-1)
@@ -167,9 +172,9 @@
 
 
 (deflayer alpha-2-upper
-        @,    @.    @F              @W    @K    @J
-  @Q    @Z    @X    @P              @G    @M    @V    @B
-                    @lmod2          @rmod2
+        @,    @.     @F              @W     @K    @J
+  @Q    @Z    @X     @P              @G     @M    @V    @B
+              @lmod2 @lmod2          @rmod2 @rmod2
 )
 
 ;; System Layer
@@ -184,7 +189,7 @@
 (deflayer sys
          lctrl @tab   @s-tab        @c-bspc up   bspc
   @home  @end  lalt   esc           lft     down rght  ret
-                      caps          del
+               XX     caps          del XX
 )
 
 ;; Number Layer
@@ -199,8 +204,8 @@
 
 (deflayer num
         -     0    @und           @4   5    6
-  @hyku 1     2    3             7    8    9    @sen
-                   =              .
+  @hyku 1     2    3              7    8    9    @sen
+              XX   =              .    XX
 )
 
 ;; Symbol Layer
@@ -236,13 +241,13 @@
 (deflayer sym-1
          -    @<    @>              @}    @{    @exc
   @tld   @cln [     ]               @rpn  @lpn  @und  @and
-                    =               ;
+              XX    =               ;     XX
 )
                        
 (deflayer sym-2
          @pct @astk @pls            @hsh  @dlr  @qst
   @crt   `    @dqt  '               @bar  @at   /     \
-                    =               ;
+              XX    =               ;     XX
 )
 
 '';
