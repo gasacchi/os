@@ -2,7 +2,6 @@
 
 {
     programs.fish.enable = true;
-    programs.adb.enable =  true;
     environment.variables.EDITOR = "hx";
     users.defaultUserShell = pkgs.fish;
     users.users.gasacchi =

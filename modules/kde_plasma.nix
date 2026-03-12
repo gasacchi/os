@@ -4,9 +4,8 @@
     hardware.bluetooth.enable = true;
     services =
     {
-        displayManager.cosmic-greeter.enable = true;
-        desktopManager.cosmic.enable = true;
-        system76-scheduler.enable = true;
+        desktopManager.plasma6.enable = true;
+        displayManager.plasma-login-manager.enable = true;
     };
 
     environment.plasma6.excludePackages = with pkgs.kdePackages;

@@ -48,6 +48,7 @@
         wl-clipboard              # wayland clipboard
         zoxide                    # fast cd command
         yt-dlp                    # youtube downloader cli
+        android-tools             # adb
 
         # develompment
         clang                     # C compiler
