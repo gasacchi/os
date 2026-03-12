@@ -10,5 +10,12 @@
 
     environment.plasma6.excludePackages = with pkgs.kdePackages;
     [
+        ark
+        kate
+        kwalletmanager
+        okular
+        elisa
+        discover
+        konsole
     ];
 }

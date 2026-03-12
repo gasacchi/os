@@ -58,7 +58,6 @@
 
         # apps
         brave                     # browser
-        google-chrome
         vlc                       # video player
         qbittorrent               # torrent
         spotify                   # music

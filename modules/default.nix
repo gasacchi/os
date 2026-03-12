@@ -5,7 +5,7 @@
     [
         ./boot.nix
         ./kanata.nix
-        # ./kde_plasma.nix
+        ./kde_plasma.nix
         ./locale.nix
         ./networking.nix
         ./packages.nix
@@ -19,18 +19,5 @@
     [
         "nix-command"
         "flakes"
-    ];
-
-    ## KDE Plasma
-
-    hardware.bluetooth.enable = true;
-    services =
-    {
-        desktopManager.plasma6.enable = true;
-        displayManager.plasma-login-manager.enable = true;
-    };
-
-    environment.plasma6.excludePackages =# with pkgs.kdePackages;
-    [
     ];
 }
