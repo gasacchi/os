@@ -8,9 +8,9 @@
 ;; Egoist 18-keys Layout
 
 (defsrc
-          '     ;     l               f     d     s     
-    ]     [     p     o               r     e     w     q
-                f11   f10             f6    f5
+             2      3      4          9      0      -
+      q      w      e      r          o      p      [      ]
+                    c      v          ,      . 
 )
 
 

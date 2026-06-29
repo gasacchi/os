@@ -55,6 +55,7 @@
         # gdb                       # debugger
         nixd                      # nix language server
         # valgrind                  # memory leak and performance checker
+        vscode-langservers-extracted
 
         # apps
         brave                     # browser

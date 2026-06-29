@@ -12,6 +12,8 @@
             "wheel"
             "networkmanager"
             "adbusers"
+            "storage"
+            "plugdev"
         ];
     };
 }
